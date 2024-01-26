@@ -38,9 +38,9 @@ autocmd FileType make set noexpandtab shiftwidth=4 softtabstop=0
 " -----------------------------------------------------------------------------
 
 " 行号相关配置
-set number           " 显示行号
-set relativenumber   " 相对行号
-set cursorline       " 在光标所在的当前行显示下划线
+set nonumber         " 不显示行号
+set norelativenumber " 不显示相对行号
+set nocursorline     " 关闭在光标所在的当前行显示下划线
 
 " 折行相关配置
 set textwidth=80     " 行宽，即一行显示多少个字符
@@ -51,6 +51,7 @@ set nowrap           " 关闭自动折行(自动折行: 太长的行分成几行
 " 光标滚动相关配置
 set scrolloff=6      " 垂直滚动时，光标距离顶部/底部的距离(单位: 行)
 set sidescrolloff=12 " 水平滚动，光标距离行首或行尾的位置(单位：字符)
+set sidescroll=1     " 当光标到达sidescrolloff处后，逐字符进行滚动显示
 
 " 底部状态栏相关配置
 " 是否显示状态栏(底部显示文件名称)。0 表示不显示，1 表示只在多窗口时显示，2 表示显示。
